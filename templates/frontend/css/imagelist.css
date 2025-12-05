@@ -1,0 +1,48 @@
+/* Masonry layout */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 1rem;
+}
+
+@media (min-width: 576px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+/* Hover overlay */
+.card-img-overlay.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  bottom: 0;
+}
+
+.card:hover .card-img-overlay.overlay {
+  opacity: 1;
+}
+
+/* Text & buttons on overlay */
+.card-img-overlay h6,
+.card-img-overlay span,
+.card-img-overlay a {
+  color: #000;
+}
+

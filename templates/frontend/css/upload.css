@@ -1,0 +1,15 @@
+#dropzone {
+    background-color: #f8f9fa;
+    border: 2px dashed #666;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+#dropzone label{
+  cursor: pointer;
+}
+
+#dropzone:hover {
+    background-color: #ffd3d3;
+    border-color: #bfbfbf;
+}
